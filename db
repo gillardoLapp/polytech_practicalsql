@@ -1,0 +1,30 @@
+CREATE TABLE IF NOT EXISTS ProductMetadata (
+ description TEXT,
+ creation_type TIMESTAMP(6),
+ id SERIAL PRIMARY KEY NOT NULL,
+ data_category TEXT,
+ data_levels TEXT,
+ data_sublevels TEXT,
+ data_association TEXT,
+ data_type TEXT,
+ data_model TEXT,
+ data_model_version TEXT,
+ data_model_url TEXT
+);
+
+
+
+CREATE TABLE IF NOT EXISTS
+  ProductMetadata ( description TEXT,
+    creation_type TIMESTAMP(6),
+    id SERIAL
+  PRIMARY KEY
+    NOT NULL,
+    data_category TEXT,
+    data_levels TEXT,
+    data_sublevels TEXT,
+    data_association TEXT,
+    data_type TEXT,
+    data_model TEXT,
+    data_model_version TEXT,
+    data_model_url TEXT );
