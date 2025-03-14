@@ -1,6 +1,7 @@
 import psycopg2
 from config import load_config
 
+
 def connect(config):
     """ Connect to the PostgreSQL database server """
     try:
@@ -10,6 +11,7 @@ def connect(config):
             return conn
     except (psycopg2.DatabaseError, Exception) as error:
         print(error)
+
 
 def display_table(config):
     commands = [
@@ -29,7 +31,6 @@ def display_table(config):
                         print(table)
     except (psycopg2.DatabaseError, Exception) as error:
         print(error)
-
 
 
 if __name__ == '__main__':
