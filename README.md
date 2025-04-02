@@ -41,3 +41,17 @@ docker exec -it my_postgres psql -U ctauser -d ctadb
 
 ### install third party libraries
 pip install psycopg2-binary
+
+
+## install the mongo DB with Docker
+
+### Prerequisite:
+Ensure Docker is running on the host machine.
+
+### Deploying PostgreSQL:
+Run the following command to start a PostgreSQL container:
+
+'docker run -d --name mongo-container -p 27017:27017 mongo'
+
+### use the Mongo client:
+docker exec -it mongo-container mongosh
