@@ -55,3 +55,24 @@ Run the following command to start a PostgreSQL container:
 
 ### use the Mongo client:
 docker exec -it mongo-container mongosh
+
+# polytech hands on :
+
+-Create a dedicated branch for each student NameOfTheStudent-year
+
+-Specification doc is under spec directory
+
+-Create Tables for ProductMetadata ActivityMetadata ContactMetadata
+
+-Write python code to generate entries in the tables (10000 entries)
+
+-Write the code to select rows that satisfy condition on date, int and string
+
+-Mesure time for insert, select
+
+-Create index
+
+-Mesure, again, time for insert, select
+
+-conclude
+
